@@ -1,0 +1,51 @@
+
+.schedule-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #F6E6FF; /* Lavender background */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for day label */
+.schedule-item label {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+}
+
+/* Style for chapter and activity checkboxes and labels */
+.chapter-checkbox,
+.activity-checkbox {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.chapter-label,
+.activity-label {
+    display: inline-block;
+    font-size: 16px;
+    color: #333; /* Dark grey */
+}
+
+/* Additional styles */
+.activity-checkbox,
+.chapter-checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+/* Lavender color */
+.activity-checkbox:checked + .activity-label,
+.chapter-checkbox:checked + .chapter-label {
+    color: #6A5ACD; /* Lavender color for checked checkboxes */
+}
+
+/* Pink color */
+.activity-checkbox:not(:checked) + .activity-label,
+.chapter-checkbox:not(:checked) + .chapter-label {
+    color: #FF69B4; 
+}
+
